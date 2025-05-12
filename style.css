@@ -1,0 +1,146 @@
+/* === Theme Variables === */
+:root {
+  --bg: #f8f6fe;
+  --gradient: linear-gradient(to bottom right, #d2ccf7, #e7defd);
+  --text: #333333;
+  --input-bg: #eeeafc;
+  --accent: #8c5bfa;
+  --card-bg: #ffffff;
+}
+
+body.dark {
+  --bg: #1e1e2e;
+  --gradient: linear-gradient(to bottom right, #181825, #1e1e2e);
+  --text: #ffffff;
+  --input-bg: #2a2a40;
+  --accent: #a96ffb;
+  --card-bg: #2e2e3e;
+}
+
+/* === Base Styling === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--gradient);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* === Container === */
+.container {
+  background-color: var(--bg);
+  border-radius: 12px;
+  padding: 20px;
+  width: 800px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  color: var(--accent);
+}
+
+h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+/* === Theme Toggle Button === */
+.toggle-theme {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* === Text Area and Upload === */
+.input-area {
+  display: flex;
+  position: relative;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 45px 10px 10px;
+  font-size: 16px;
+  resize: none;
+  background-color: var(--input-bg);
+  color: var(--text);
+}
+
+.upload-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* === Options Row === */
+.options {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.generate-btn {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.generate-btn:hover {
+  background-color: #7a4de0;
+}
+
+/* === Image Grid === */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
