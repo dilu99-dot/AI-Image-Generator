@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://imgur.com/a/HbJ5YTC" alt="AI Image Generator Banner" width="800"/>
+  <img src="https://imgur.com/a/HbJ5YTC](https://imgur.com/Q1Aq9NS" alt="AI Image Generator Banner" width="800"/>
 </p>
 
 <h1 align="center">⚡ AI Image Generator (FLUX.1-dev)</h1>
